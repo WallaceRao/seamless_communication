@@ -7,8 +7,9 @@
 name: seamlessM4T_v2_large
 base: unity_nllb-100
 model_arch: base_v2
-char_tokenizer: "https://huggingface.co/facebook/seamless-m4t-v2-large/resolve/main/spm_char_lang38_tc.model"
-checkpoint: "https://huggingface.co/facebook/seamless-m4t-v2-large/resolve/main/seamlessM4T_v2_large.pt"
+char_tokenizer: "https://hf-mirror.com/facebook/seamless-m4t-v2-large/resolve/main/spm_char_lang38_tc.model"
+checkpoint: "http://10.31.14.26:8000/seamlessM4T_v2_large.pt"
+#https://hf-mirror.com/facebook/seamless-m4t-v2-large/resolve/main/seamlessM4T_v2_large.pt"
 num_units: 10000
 unit_langs:
   - arb

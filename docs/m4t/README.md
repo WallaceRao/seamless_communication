@@ -30,9 +30,9 @@ The v2 version of SeamlessM4T is a multitask adaptation of our novel *UnitY2* ar
 ## SeamlessM4T  models
 | Model Name         | #params | checkpoint                                                                              | metrics                                                                              |
 | ------------------ | ------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| SeamlessM4T-Large v2  | 2.3B    | [🤗 Model card](https://huggingface.co/facebook/seamless-m4t-v2-large) - [checkpoint](https://huggingface.co/facebook/seamless-m4t-v2-large/resolve/main/seamlessM4T_v2_large.pt)   | [metrics](https://dl.fbaipublicfiles.com/seamless/metrics/seamlessM4T_large_v2.zip)  |
-| SeamlessM4T-Large (v1) | 2.3B    | [🤗 Model card](https://huggingface.co/facebook/seamless-m4t-large) - [checkpoint](https://huggingface.co/facebook/seamless-m4t-large/resolve/main/multitask_unity_large.pt)   | [metrics](https://dl.fbaipublicfiles.com/seamless/metrics/seamlessM4T_large.zip)  |
-| SeamlessM4T-Medium (v1) | 1.2B    | [🤗 Model card](https://huggingface.co/facebook/seamless-m4t-medium) - [checkpoint](https://huggingface.co/facebook/seamless-m4t-medium/resolve/main/multitask_unity_medium.pt) | [metrics](https://dl.fbaipublicfiles.com/seamless/metrics/seamlessM4T_medium.zip) |
+| SeamlessM4T-Large v2  | 2.3B    | [🤗 Model card](https://hf-mirror.com/facebook/seamless-m4t-v2-large) - [checkpoint](https://hf-mirror.com/facebook/seamless-m4t-v2-large/resolve/main/seamlessM4T_v2_large.pt)   | [metrics](https://dl.fbaipublicfiles.com/seamless/metrics/seamlessM4T_large_v2.zip)  |
+| SeamlessM4T-Large (v1) | 2.3B    | [🤗 Model card](https://hf-mirror.com/facebook/seamless-m4t-large) - [checkpoint](https://hf-mirror.com/facebook/seamless-m4t-large/resolve/main/multitask_unity_large.pt)   | [metrics](https://dl.fbaipublicfiles.com/seamless/metrics/seamlessM4T_large.zip)  |
+| SeamlessM4T-Medium (v1) | 1.2B    | [🤗 Model card](https://hf-mirror.com/facebook/seamless-m4t-medium) - [checkpoint](https://hf-mirror.com/facebook/seamless-m4t-medium/resolve/main/multitask_unity_medium.pt) | [metrics](https://dl.fbaipublicfiles.com/seamless/metrics/seamlessM4T_medium.zip) |
 
 We provide the extensive evaluation results of seamlessM4T-Large and SeamlessM4T-Medium reported in the paper (as averages) in the `metrics` files above.
 
@@ -65,9 +65,9 @@ m4t_predict <path_to_input_audio> --task asr --tgt_lang <tgt_lang> --model_name 
 ```
 ### Inference with `Translator`:
 Inference calls for the `Translator` object instantiated with a multitask UnitY or UnitY2 model with the options:
-- [`seamlessM4T_v2_large`](https://huggingface.co/facebook/seamless-m4t-v2-large)
-- [`seamlessM4T_large`](https://huggingface.co/facebook/seamless-m4t-large)
-- [`seamlessM4T_medium`](https://huggingface.co/facebook/seamless-m4t-medium)
+- [`seamlessM4T_v2_large`](https://hf-mirror.com/facebook/seamless-m4t-v2-large)
+- [`seamlessM4T_large`](https://hf-mirror.com/facebook/seamless-m4t-large)
+- [`seamlessM4T_medium`](https://hf-mirror.com/facebook/seamless-m4t-medium)
 
 and a vocoder:
 - `vocoder_v2` for `seamlessM4T_v2_large`.
@@ -209,7 +209,7 @@ torchaudio.save(
     sample_rate=model.config.sampling_rate,
 )
 ```
-2.  (bis) To run inference for text generating tasks (T2TT, ASR or S2TT), it is recommended to use [dedicated models](https://huggingface.co/docs/transformers/main/en/model_doc/seamless_m4t_v2#1-use-dedicated-models). With that, only the required sub-modules will be loaded. For exmaple, text-to-text translation from English to Bulgarian, is performed as follows:
+2.  (bis) To run inference for text generating tasks (T2TT, ASR or S2TT), it is recommended to use [dedicated models](https://hf-mirror.com/docs/transformers/main/en/model_doc/seamless_m4t_v2#1-use-dedicated-models). With that, only the required sub-modules will be loaded. For exmaple, text-to-text translation from English to Bulgarian, is performed as follows:
 ```py
 from transformers import AutoProcessor, SeamlessM4Tv2ForTextToText
 processor = AutoProcessor.from_pretrained("facebook/seamless-m4t-v2-large")
@@ -225,8 +225,8 @@ print(f"{tgt_lang}: {translated_text}")
 
 > [!NOTE]
 > For more details on using the SeamlessM4T model for inference using the 🤗 Transformers library, refer to the
-[SeamlessM4T v2 docs](https://huggingface.co/docs/transformers/main/en/model_doc/seamless_m4t_v2), the
-[SeamlessM4T v1 docs](https://huggingface.co/docs/transformers/main/en/model_doc/seamless_m4t) or to this hands-on [Google Colab](https://colab.research.google.com/github/ylacombe/scripts_and_notebooks/blob/main/v2_seamless_m4t_hugging_face.ipynb).
+[SeamlessM4T v2 docs](https://hf-mirror.com/docs/transformers/main/en/model_doc/seamless_m4t_v2), the
+[SeamlessM4T v1 docs](https://hf-mirror.com/docs/transformers/main/en/model_doc/seamless_m4t) or to this hands-on [Google Colab](https://colab.research.google.com/github/ylacombe/scripts_and_notebooks/blob/main/v2_seamless_m4t_hugging_face.ipynb).
 
 
 ## Finetuning SeamlessM4T models

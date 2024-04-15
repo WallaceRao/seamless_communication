@@ -17,7 +17,7 @@ etox_lang_variants:
   - zho_Hans
   - zho_Hant
 
-sp_model: https://huggingface.co/facebook/seamless-m4t-medium/resolve/main/tokenizer.model
+sp_model: https://hf-mirror.com/facebook/seamless-m4t-medium/resolve/main/tokenizer.model
 
 # For some languages, we use the SentencePiece model.
 sp_langs:

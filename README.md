@@ -10,7 +10,7 @@ Seamless is a family of AI models that enable more natural and authentic communi
 |                        | SeamlessM4T v2                                                                                                                        | SeamlessExpressive                                                                                                                               | SeamlessStreaming                                                                      |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- |
 | Demo                   | [SeamlessM4T v2 Demo](https://seamless.metademolab.com/m4t?utm_source=github&utm_medium=web&utm_campaign=seamless&utm_content=readme) | [SeamlessExpressive Demo](https://seamless.metademolab.com/expressive?utm_source=github&utm_medium=web&utm_campaign=seamless&utm_content=readme) |                                                                                          |
-| HuggingFace Space Demo | [🤗 SeamlessM4T v2 Space](https://huggingface.co/spaces/facebook/seamless-m4t-v2-large)                                                | [🤗 SeamlessExpressive Space](https://huggingface.co/spaces/facebook/seamless-expressive)                                                         | [🤗 SeamlessStreaming Space](https://huggingface.co/spaces/facebook/seamless-streaming) |
+| HuggingFace Space Demo | [🤗 SeamlessM4T v2 Space](https://hf-mirror.com/spaces/facebook/seamless-m4t-v2-large)                                                | [🤗 SeamlessExpressive Space](https://hf-mirror.com/spaces/facebook/seamless-expressive)                                                         | [🤗 SeamlessStreaming Space](https://hf-mirror.com/spaces/facebook/seamless-streaming) |
 
 ### Papers
 [Seamless](https://ai.facebook.com/research/publications/seamless-multilingual-expressive-and-streaming-speech-translation/)
@@ -37,7 +37,7 @@ SeamlessM4T models support the tasks of:
 
 :star2: We are releasing SeamlessM4T v2, an updated version with our novel *UnitY2* architecture. This new model improves over SeamlessM4T v1 in quality as well as inference latency in speech generation tasks.
 
-To learn more about the collection of SeamlessM4T models, the approach used in each, their language coverage and their performance, visit the [SeamlessM4T README](docs/m4t/README.md) or [🤗 Model Card](https://huggingface.co/facebook/seamless-m4t-v2-large).
+To learn more about the collection of SeamlessM4T models, the approach used in each, their language coverage and their performance, visit the [SeamlessM4T README](docs/m4t/README.md) or [🤗 Model Card](https://hf-mirror.com/facebook/seamless-m4t-v2-large).
 
 > [!NOTE]
 > Seamless M4T is also available in the 🤗 Transformers library. Visit [this section](docs/m4t/README.md#transformers-usage) for more details.
@@ -46,7 +46,7 @@ To learn more about the collection of SeamlessM4T models, the approach used in e
 
 SeamlessExpressive is a speech-to-speech translation model that captures certain underexplored aspects of prosody such as speech rate and pauses, while preserving the style of one's voice and high content translation quality.
 
-To learn more about SeamlessExpressive models, visit the [SeamlessExpressive README](docs/expressive/README.md) or [🤗 Model Card](https://huggingface.co/facebook/seamless-expressive)
+To learn more about SeamlessExpressive models, visit the [SeamlessExpressive README](docs/expressive/README.md) or [🤗 Model Card](https://hf-mirror.com/facebook/seamless-expressive)
 
 
 ## SeamlessStreaming
@@ -58,7 +58,7 @@ The SeamlessStreaming model supports the following tasks:
 - Speech-to-text translation (S2TT)
 - Automatic speech recognition (ASR)
 
-To learn more about SeamlessStreaming models, visit the [SeamlessStreaming README](docs/streaming/README.md) or [🤗 Model Card](https://huggingface.co/facebook/seamless-streaming)
+To learn more about SeamlessStreaming models, visit the [SeamlessStreaming README](docs/streaming/README.md) or [🤗 Model Card](https://hf-mirror.com/facebook/seamless-streaming)
 
 ## Seamless
 
@@ -117,10 +117,10 @@ expressivity_predict <path_to_input_audio> --tgt_lang <tgt_lang> --model_name se
 
 
 ## Running SeamlessStreaming Demo
-You can duplicate the [SeamlessStreaming HF space](https://huggingface.co/spaces/facebook/seamless-streaming?duplicate=true) to run the streaming demo.
+You can duplicate the [SeamlessStreaming HF space](https://hf-mirror.com/spaces/facebook/seamless-streaming?duplicate=true) to run the streaming demo.
 
 
-You can also run the demo locally, by cloning the space from [here](https://huggingface.co/spaces/facebook/seamless-streaming/tree/main). See the [README](https://huggingface.co/spaces/facebook/seamless-streaming/blob/main/README.md) of the SeamlessStreaming HF repo for more details on installation.
+You can also run the demo locally, by cloning the space from [here](https://hf-mirror.com/spaces/facebook/seamless-streaming/tree/main). See the [README](https://hf-mirror.com/spaces/facebook/seamless-streaming/blob/main/README.md) of the SeamlessStreaming HF repo for more details on installation.
 
 ## Running SeamlessM4T & SeamlessExpressive [Gradio](https://github.com/gradio-app/gradio) demos locally
 
@@ -137,13 +137,13 @@ python app.py
 ### SeamlessM4T models
 | Model Name              | #params | checkpoint                                                                                                                                                                     | metrics                                                                             |
 | ----------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------- |
-| SeamlessM4T-Large v2    | 2.3B    | [🤗 Model card](https://huggingface.co/facebook/seamless-m4t-v2-large) - [checkpoint](https://huggingface.co/facebook/seamless-m4t-v2-large/resolve/main/seamlessM4T_v2_large.pt  )                   | [metrics](https://dl.fbaipublicfiles.com/seamless/metrics/seamlessM4T_large_v2.zip) |
-| SeamlessM4T-Large (v1)  | 2.3B    | [🤗 Model card](https://huggingface.co/facebook/seamless-m4t-large) - [checkpoint](https://huggingface.co/facebook/seamless-m4t-large/resolve/main/multitask_unity_large.pt)    | [metrics](https://dl.fbaipublicfiles.com/seamless/metrics/seamlessM4T_large.zip)    |
-| SeamlessM4T-Medium (v1) | 1.2B    | [🤗 Model card](https://huggingface.co/facebook/seamless-m4t-medium) - [checkpoint](https://huggingface.co/facebook/seamless-m4t-medium/resolve/main/multitask_unity_medium.pt) | [metrics](https://dl.fbaipublicfiles.com/seamless/metrics/seamlessM4T_medium.zip)   |
+| SeamlessM4T-Large v2    | 2.3B    | [🤗 Model card](https://hf-mirror.com/facebook/seamless-m4t-v2-large) - [checkpoint](https://hf-mirror.com/facebook/seamless-m4t-v2-large/resolve/main/seamlessM4T_v2_large.pt  )                   | [metrics](https://dl.fbaipublicfiles.com/seamless/metrics/seamlessM4T_large_v2.zip) |
+| SeamlessM4T-Large (v1)  | 2.3B    | [🤗 Model card](https://hf-mirror.com/facebook/seamless-m4t-large) - [checkpoint](https://hf-mirror.com/facebook/seamless-m4t-large/resolve/main/multitask_unity_large.pt)    | [metrics](https://dl.fbaipublicfiles.com/seamless/metrics/seamlessM4T_large.zip)    |
+| SeamlessM4T-Medium (v1) | 1.2B    | [🤗 Model card](https://hf-mirror.com/facebook/seamless-m4t-medium) - [checkpoint](https://hf-mirror.com/facebook/seamless-m4t-medium/resolve/main/multitask_unity_medium.pt) | [metrics](https://dl.fbaipublicfiles.com/seamless/metrics/seamlessM4T_medium.zip)   |
 
 ### SeamlessExpressive models
 
-[🤗 Model card](https://huggingface.co/facebook/seamless-expressive)
+[🤗 Model card](https://hf-mirror.com/facebook/seamless-expressive)
 
 To access and download SeamlessExpressive, please request the model artifacts through [this request form](https://ai.meta.com/resources/models-and-libraries/seamless-downloads/). Upon approval, you will then receive an email with download links to each model artifact.
 
@@ -152,7 +152,7 @@ Please note that SeamlessExpressive is made available under its own [License](SE
 ### SeamlessStreaming models
 | Model Name        | #params | checkpoint                                                                                                                                                                                                                                                                                              | metrics                                                                                     |
 | ----------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| SeamlessStreaming | 2.5B    | [🤗 Model card](https://huggingface.co/facebook/seamless-streaming) - [monotonic decoder checkpoint](https://huggingface.co/facebook/seamless-streaming/resolve/main/seamless_streaming_monotonic_decoder.pt) - [streaming UnitY2 checkpoint](https://huggingface.co/facebook/seamless-streaming/resolve/main/seamless_streaming_unity.pt) | [metrics](https://dl.fbaipublicfiles.com/seamless/metrics/streaming/seamless_streaming.zip) |
+| SeamlessStreaming | 2.5B    | [🤗 Model card](https://hf-mirror.com/facebook/seamless-streaming) - [monotonic decoder checkpoint](https://hf-mirror.com/facebook/seamless-streaming/resolve/main/seamless_streaming_monotonic_decoder.pt) - [streaming UnitY2 checkpoint](https://hf-mirror.com/facebook/seamless-streaming/resolve/main/seamless_streaming_unity.pt) | [metrics](https://dl.fbaipublicfiles.com/seamless/metrics/streaming/seamless_streaming.zip) |
 
 ### Seamless models
 Seamless model is simply the SeamlessStreaming model with the non-expressive `vocoder_v2` swapped out with the expressive `vocoder_pretssel`.
@@ -161,7 +161,7 @@ Please check out above [section](#seamlessexpressive-models) on how to acquire `
 ### W2v-BERT 2.0 speech encoder
 | Model Name        | #params | checkpoint                                                                                                                                                                                                                                                                                                                                                                 |
 | ----------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| W2v-BERT 2.0 | 600M    | [🤗 Model card](https://huggingface.co/facebook/conformer-shaw) - [checkpoint](https://huggingface.co/facebook/conformer-shaw/resolve/main/conformer_shaw.pt)
+| W2v-BERT 2.0 | 600M    | [🤗 Model card](https://hf-mirror.com/facebook/conformer-shaw) - [checkpoint](https://hf-mirror.com/facebook/conformer-shaw/resolve/main/conformer_shaw.pt)
 
 Here's how you should do a foward pass through the speech encoder:
 

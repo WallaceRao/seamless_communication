@@ -28,7 +28,7 @@ logging.basicConfig(
 logger = logging.getLogger("dataset")
 
 
-# Full list of FLEURS langcodes is available at https://huggingface.co/datasets/google/fleurs
+# Full list of FLEURS langcodes is available at https://hf-mirror.com/datasets/google/fleurs
 # Full list of M4T langcodes is available
 # in paper "SeamlessM4T—Massively Multilingual & Multimodal Machine Translation" (Table 5)
 UNITY_TO_FLEURS_LANG_MAPPING = {

@@ -7,4 +7,4 @@
 name: seamless_streaming_monotonic_decoder
 model_type: monotonic_decoder
 model_arch: dense_1b
-checkpoint: "https://huggingface.co/facebook/seamless-streaming/resolve/main/seamless_streaming_monotonic_decoder.pt"
+checkpoint: "https://hf-mirror.com/facebook/seamless-streaming/resolve/main/seamless_streaming_monotonic_decoder.pt"

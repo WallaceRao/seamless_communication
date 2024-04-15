@@ -32,9 +32,9 @@ m4t_predict <path_to_input_audio> --task asr --tgt_lang <tgt_lang> --model_name 
 ## Inference breakdown
 
 Inference calls for the `Translator` object instantiated with a multitask UnitY or UnitY2 model with the options:
-- [`seamlessM4T_v2_large`](https://huggingface.co/facebook/seamless-m4t-v2-large)
-- [`seamlessM4T_large`](https://huggingface.co/facebook/seamless-m4t-large)
-- [`seamlessM4T_medium`](https://huggingface.co/facebook/seamless-m4t-medium)
+- [`seamlessM4T_v2_large`](https://hf-mirror.com/facebook/seamless-m4t-v2-large)
+- [`seamlessM4T_large`](https://hf-mirror.com/facebook/seamless-m4t-large)
+- [`seamlessM4T_medium`](https://hf-mirror.com/facebook/seamless-m4t-medium)
 
 and a vocoder:
 - `vocoder_v2` for `seamlessM4T_v2_large`.

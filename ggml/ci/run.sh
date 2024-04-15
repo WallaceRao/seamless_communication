@@ -136,7 +136,7 @@ function gg_sum_ctest_release {
 function gg_run_gpt_2 {
     cd ${SRC}
 
-    gg_wget models-mnt/gpt-2 https://huggingface.co/ggerganov/ggml/resolve/main/ggml-model-gpt-2-117M.bin
+    gg_wget models-mnt/gpt-2 https://hf-mirror.com/ggerganov/ggml/resolve/main/ggml-model-gpt-2-117M.bin
 
     cd build-ci-release
 
@@ -166,13 +166,13 @@ function gg_sum_gpt_2 {
 function gg_run_mpt {
     cd ${SRC}
 
-    gg_wget models-mnt/mpt/7B/ https://huggingface.co/mosaicml/mpt-7b/raw/main/config.json
-    gg_wget models-mnt/mpt/7B/ https://huggingface.co/mosaicml/mpt-7b/raw/main/tokenizer.json
-    gg_wget models-mnt/mpt/7B/ https://huggingface.co/mosaicml/mpt-7b/raw/main/tokenizer_config.json
-    gg_wget models-mnt/mpt/7B/ https://huggingface.co/mosaicml/mpt-7b/raw/main/pytorch_model.bin.index.json
-    gg_wget models-mnt/mpt/7B/ https://huggingface.co/mosaicml/mpt-7b/raw/main/configuration_mpt.py
-    gg_wget models-mnt/mpt/7B/ https://huggingface.co/mosaicml/mpt-7b/resolve/main/pytorch_model-00001-of-00002.bin
-    gg_wget models-mnt/mpt/7B/ https://huggingface.co/mosaicml/mpt-7b/resolve/main/pytorch_model-00002-of-00002.bin
+    gg_wget models-mnt/mpt/7B/ https://hf-mirror.com/mosaicml/mpt-7b/raw/main/config.json
+    gg_wget models-mnt/mpt/7B/ https://hf-mirror.com/mosaicml/mpt-7b/raw/main/tokenizer.json
+    gg_wget models-mnt/mpt/7B/ https://hf-mirror.com/mosaicml/mpt-7b/raw/main/tokenizer_config.json
+    gg_wget models-mnt/mpt/7B/ https://hf-mirror.com/mosaicml/mpt-7b/raw/main/pytorch_model.bin.index.json
+    gg_wget models-mnt/mpt/7B/ https://hf-mirror.com/mosaicml/mpt-7b/raw/main/configuration_mpt.py
+    gg_wget models-mnt/mpt/7B/ https://hf-mirror.com/mosaicml/mpt-7b/resolve/main/pytorch_model-00001-of-00002.bin
+    gg_wget models-mnt/mpt/7B/ https://hf-mirror.com/mosaicml/mpt-7b/resolve/main/pytorch_model-00002-of-00002.bin
 
     cd build-ci-release
 
